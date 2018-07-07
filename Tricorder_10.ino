@@ -6,6 +6,8 @@
 //GO TO SKETCH AND DOWNLOAD THE LIBRARIES BELOW:              |
 //  1.DHT.H                                                   |
 //  2.LIQUIDCRYSTAL.H                                         |
+//IF IT DOES NOT WORK, THEN                                   |
+//TRY DOWNLOADING ALL OF THE LIRARIES                         |
 //-------------------------------------------------------------
 //=============================================================
 //SETUP THE CORRECT TOOLS:                                    |
@@ -14,7 +16,7 @@
 //- SET THE UPLOAD SPEED TO 115200 OR YOUR OWN BOARD SPEED    |
 //=============================================================
 //=============================================================
-// for DHT11,                                                 |
+// DHT11 PINS:                                                |
 //      (PIN 1)Data: D7                                       |
 //      (PIN 2)VCC: 5V or 3V                                  |
 //      (PIN 3)GND: GND                                       |
@@ -123,7 +125,7 @@ void loop() {//BEGINS MAIN PART OF THE PROGRAM
 //  (7,1);//RESETS CURSOR TO THE SECOND ROW
 //  lcd.print(5/9*(f-32));//CONVERTS TEMPERATURE F TO C WITH THE CONVERSION EQUATION (5/9*(F-32) USES ACII CHARS)
 //  delay((random(900, 1000))); digitalWrite(LED_BUILTIN, LOW);//WAITS 900-1000 MILLISECS(0.9-1 SECS)AND TURNS OFF THE LED
-  lcd.clear();//CLEARS LCD
+//  lcd.clear();//CLEARS LCD  
 }
 //OBJECTIVE:
 //THE OBJECTIVE OF THIS PROJECT IS TO CREATE A STAR TREK TRICORDER AS REAL AS POSSIBLE.
@@ -154,3 +156,19 @@ void loop() {//BEGINS MAIN PART OF THE PROGRAM
 //               NOTES:
 //-WORKS MOSTLY WITH ARDUINO GENUINO OR UNO
 //-SET MAINLY FOR FAREHNHEIT, REQUIRES CONFIGURATION FOR CELCIUS
+//                    {PROGRAM:
+//    {SETUP:
+//{SHOWS THE SETUP SIGN AS THE PROGRAM LOADS THE SETUP
+//  SETUPS FUNCTIONS SUCH AS:{
+//    LED AS THE OUTPUT
+//    STATES THE PINS OF THE LCD
+//    STATES THE DHT11 PINS}
+//}
+//    }
+//    {PROGRAM START:
+//CHECKS FOR DHT11 PIN INCORRECT PINS
+//LOADS THE CURRENT TEMPERATURE AND HUMIDITY AND BLINKS THE LED
+//CONVERTS F TO C IF FUNCTION UNCOMMENTED
+//REPEATS THE CLASS
+//}
+//                    }
